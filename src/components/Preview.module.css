@@ -1,0 +1,22 @@
+.stage {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, #3a4158 0%, transparent 42%),
+    #2a2f40;
+}
+
+.scale {
+  transform-origin: top center;
+  flex: 0 0 auto;
+}
+
+.scale :global(.rf-page) {
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}

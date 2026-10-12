@@ -1,0 +1,131 @@
+.page {
+  width: 210mm;
+  height: 297mm;
+  padding: 15mm 16mm 16mm;
+  box-sizing: border-box;
+  background: #fff;
+  color: #1f2937;
+  overflow: hidden;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.38;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: start;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #2563eb;
+  margin-bottom: 14px;
+}
+
+.name {
+  margin: 0;
+  font-size: 24pt;
+  font-weight: 720;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+}
+
+.role {
+  margin: 4px 0 0;
+  font-size: 12pt;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  font-size: 9.5pt;
+  color: #334155;
+  display: grid;
+  gap: 3px;
+}
+
+.section {
+  margin-top: 12px;
+}
+
+.sectionTitle {
+  margin: 0 0 8px;
+  font-size: 10.5pt;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.summary {
+  margin: 0;
+}
+
+.item {
+  margin-bottom: 9px;
+}
+
+.itemHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.itemMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 9.5pt;
+  color: #475569;
+}
+
+.bullets {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.bullets li {
+  margin-bottom: 2px;
+}
+
+.skills {
+  display: grid;
+  gap: 8px;
+}
+
+.skillGroup {
+  display: grid;
+  gap: 4px;
+}
+
+.skillName {
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+.tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 9pt;
+}
+
+.customBody {
+  margin: 2px 0 0;
+  color: #334155;
+}

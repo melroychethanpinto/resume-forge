@@ -1,0 +1,170 @@
+.editor {
+  width: 360px;
+  flex: 0 0 360px;
+  min-height: 0;
+  overflow: auto;
+  background: #16181f;
+  color: #e8e9ee;
+  border-right: 1px solid #2a2d38;
+}
+
+@media (max-width: 900px) {
+  .editor {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: 46vh;
+    border-right: 0;
+    border-bottom: 1px solid #2a2d38;
+  }
+}
+
+.inner {
+  padding: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.panel {
+  border: 1px solid #2f3342;
+  border-radius: 10px;
+  background: #1c1f29;
+  overflow: hidden;
+}
+
+.panel summary {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  font-weight: 650;
+  list-style: none;
+}
+
+.panel summary::-webkit-details-marker {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.body {
+  display: grid;
+  gap: 10px;
+  padding: 0 12px 12px;
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  color: #c5c8d4;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #3a3f51;
+  background: #12141b;
+  color: #f4f5f8;
+  border-radius: 6px;
+  padding: 7px 8px;
+  font: inherit;
+}
+
+.field textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.item {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #32364a;
+  border-radius: 8px;
+  background: #15171f;
+}
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #9aa0b4;
+}
+
+.bulletRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #2a3148;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.ghost,
+.danger,
+.primary {
+  border: 1px solid #3a3f51;
+  background: transparent;
+  color: #d5d8e2;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.primary {
+  background: #3b6cff;
+  border-color: #3b6cff;
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+  font-weight: 650;
+}
+
+.danger {
+  color: #f8b4b4;
+  border-color: #5a3434;
+}
+
+.hint {
+  margin: 0;
+  font-size: 12px;
+  color: #8b90a4;
+}
+
+.visible {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #9aa0b4;
+}
